@@ -34,8 +34,11 @@ let Rooster = 9;
 let Dog = 10;
 let Pig = 11;
 
-let userinput = 11;
-let formula = ((userinput - 4) % 12);
+let userinput = prompt("Enter a Value", "0");
+
+let year = parseInt(userinput);
+
+let formula = ((year - 4) % 12);
 
 if (formula == 0) {
     console.log("Rat");
